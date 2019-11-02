@@ -1,0 +1,14 @@
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\bin\Debug\netstandard2.0\WeCycle.deps.json
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\bin\Debug\netstandard2.0\WeCycle.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\bin\Debug\netstandard2.0\ref\WeCycle.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\bin\Debug\netstandard2.0\WeCycle.pdb
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.csprojAssemblyReference.cache
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\Page1.xaml.g.cs
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.AssemblyInfoInputs.cache
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.AssemblyInfo.cs
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\ref\WeCycle.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.pdb
