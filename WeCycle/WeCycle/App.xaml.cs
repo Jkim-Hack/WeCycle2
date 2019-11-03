@@ -10,7 +10,8 @@ namespace WeCycle
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new CameraMain();
         }
 
         protected override void OnStart()

@@ -4,6 +4,13 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "WeCycle.Android.dll" comes first in this list. */
 		"WeCycle.Android.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+		"Microsoft.Rest.ClientRuntime.Azure.dll",
+		"Microsoft.Rest.ClientRuntime.dll",
+		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Media.dll",
+		"Plugin.Permissions.dll",
 		"WeCycle.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",

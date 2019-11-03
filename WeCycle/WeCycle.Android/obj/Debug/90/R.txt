@@ -976,8 +976,9 @@ int drawable notification_template_icon_bg 0x7f070070
 int drawable notification_template_icon_low_bg 0x7f070071
 int drawable notification_tile_bg 0x7f070072
 int drawable notify_panel_notification_icon_bg 0x7f070073
-int drawable tooltip_frame_dark 0x7f070074
-int drawable tooltip_frame_light 0x7f070075
+int drawable oval 0x7f070074
+int drawable tooltip_frame_dark 0x7f070075
+int drawable tooltip_frame_light 0x7f070076
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002
@@ -2587,4 +2588,5 @@ int[] styleable ViewStubCompat { 0x010100d0, 0x010100f2, 0x010100f3 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
-int xml xamarin_essentials_fileprovider_file_paths 0x7f100000
+int xml file_paths 0x7f100000
+int xml xamarin_essentials_fileprovider_file_paths 0x7f100001

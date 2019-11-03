@@ -16,8 +16,6 @@ namespace WeCycle
         public MainPage()
         {
             InitializeComponent();
-            var label = this.FindByName<Label>("label");
-            label.Text = "Hello";
            
         }
     }
