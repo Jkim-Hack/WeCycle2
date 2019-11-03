@@ -44,6 +44,7 @@ namespace WeCycle
                 return grid;
             });
 
+
         }
         void changePg(object sender, SwipedEventArgs e)
         {
