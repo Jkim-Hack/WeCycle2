@@ -58,3 +58,8 @@ C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\obj\iPhoneSimulator\Debu
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\obj\iPhoneSimulator\Debug\WeCycle.iOS.csproj.CopyComplete
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\obj\iPhoneSimulator\Debug\WeCycle.iOS.exe
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\obj\iPhoneSimulator\Debug\WeCycle.iOS.pdb
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\bin\iPhoneSimulator\Debug\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\bin\iPhoneSimulator\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\bin\iPhoneSimulator\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.dll

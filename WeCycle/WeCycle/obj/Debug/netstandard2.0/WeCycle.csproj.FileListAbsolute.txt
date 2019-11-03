@@ -11,4 +11,7 @@ C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\ref
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.pdb
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\CameraMain.xaml.g.cs
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\WeCycle.csprojAssemblyReference.cache
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\Challenges.xaml.g.cs
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\Friends.xaml.g.cs
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\Login.xaml.g.cs
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle\obj\Debug\netstandard2.0\XamlC.stamp

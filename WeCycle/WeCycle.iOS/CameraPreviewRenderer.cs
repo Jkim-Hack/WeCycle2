@@ -1,17 +1,18 @@
-﻿using System;
-using CustomRenderer;
-using CustomRenderer.iOS;
+﻿/*
+using System;
+using WeCycle;
+using WeCycle.iOS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(CameraPreview), typeof(CameraPreviewRenderer))]
 namespace WeCycle.iOS
 {
-    public class CameraPreviewRenderer : ViewRenderer<CameraPreview, UICameraPreview>
+    public class CameraPreviewRenderer : ViewRenderer<UICameraPreview, UICameraPreview>
     {
         UICameraPreview uiCameraPreview;
 
-        protected override void OnElementChanged(ElementChangedEventArgs<CameraPreview> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<UICameraPreview> e)
         {
             base.OnElementChanged(e);
 
@@ -57,3 +58,4 @@ namespace WeCycle.iOS
         }
     }
 }
+*/

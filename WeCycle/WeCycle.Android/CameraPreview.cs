@@ -5,6 +5,7 @@ using Android.Hardware;
 using Android.Runtime;
 using Android.Views;
 
+
 namespace WeCycle.Droid
 {
     public sealed class CameraPreview : ViewGroup, ISurfaceHolderCallback
@@ -43,6 +44,11 @@ namespace WeCycle.Droid
             IsPreviewing = false;
             holder = surfaceView.Holder;
             holder.AddCallback(this);
+        }
+
+        public void TakePicture()
+        {
+            
         }
 
         protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)

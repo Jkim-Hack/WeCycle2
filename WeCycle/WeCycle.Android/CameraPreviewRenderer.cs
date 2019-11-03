@@ -5,8 +5,7 @@ using WeCycle;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-
-[assembly: ExportRenderer(typeof(WeCycle.CameraPreview), typeof(WeCycle.Droid.CameraPreviewRenderer))]
+[assembly: ExportRenderer(typeof(WeCycle.CameraPreview), typeof(WeCycle.Droid.CameraPreviewRenderer)), Xamarin.Forms.Dependency(typeof(WeCycle.Droid.CameraPreviewRenderer))]
 namespace WeCycle.Droid
 {
     public class CameraPreviewRenderer : ViewRenderer<WeCycle.CameraPreview, WeCycle.Droid.CameraPreview>
@@ -33,14 +32,13 @@ namespace WeCycle.Droid
                 {
                     cameraPreview = new CameraPreview(Context);
                     SetNativeControl(cameraPreview);
-                    
+
                 }
                 Control.Preview = Camera.Open((int)e.NewElement.Camera);
 
                 // Subscribe
-                cameraPreview.Click += OnCameraPreviewClicked;
                 //takePicture.Clicked += OnCameraPreviewClicked;
-                
+                //cameraPreview.TakePicture();
             }
         }
 
@@ -65,5 +63,6 @@ namespace WeCycle.Droid
             }
             base.Dispose(disposing);
         }
+
     }
 }

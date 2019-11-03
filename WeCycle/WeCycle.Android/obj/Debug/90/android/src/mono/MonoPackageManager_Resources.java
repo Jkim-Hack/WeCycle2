@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"WeCycle.Android.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+		"Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
 		"Microsoft.Rest.ClientRuntime.Azure.dll",
 		"Microsoft.Rest.ClientRuntime.dll",
 		"Newtonsoft.Json.dll",

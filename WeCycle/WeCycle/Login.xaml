@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WeCycle.Login"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="CircleBackBig.png"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Scale="1.12"
+                                x:Name="backgrnd"/>
+                    <Image Source="WeCycle.png"
+                                x:Name="title" ScaleY=".6" ScaleX=".6" TranslationY="-100"/>
+                    <Label Text="Never Waste Again!"
+                                x:Name="quote"
+                                TranslationY="-45"
+                                VerticalOptions="CenterAndExpand" 
+                                HorizontalOptions="CenterAndExpand" />
+                    <Image Source="Divider.png"
+                                Scale="0.35"
+                                x:Name="divide"/>
+                    <Entry x:Name="UsernameEntry" Placeholder="Username"
+                                TranslationY="50"
+                                Margin="10,10"
+                                BackgroundColor="Transparent"
+                                ClearButtonVisibility="WhileEditing" VerticalOptions="CenterAndExpand" />
+                    <Entry x:Name="PasswordEntry" Placeholder="Password"
+                                IsPassword="True"
+                                TranslationY="100"
+                                Margin="10,10"
+                                BackgroundColor="Transparent"
+                                ClearButtonVisibility="WhileEditing" VerticalOptions="CenterAndExpand" />
+                <ImageButton x:Name="SignIn" HorizontalOptions="Center" 
+                        Source="BlueBubble.png" VerticalOptions="Center"
+                             ScaleX=".5"
+                             Padding="10"
+                             TranslationY="175" TranslationX="0"/>
+                <Label Text="Sign In" BackgroundColor="Transparent" 
+                       TranslationY="175"
+                       HorizontalOptions="Center" 
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="Large"
+                       TextColor="White"></Label>
+                <ImageButton x:Name="SignUp" HorizontalOptions="Center" 
+                        Source="BlueBubble.png" VerticalOptions="Center"
+                             ScaleX=".5"
+                             Padding="10"
+                             TranslationY="250" TranslationX="0"/>
+                <Label Text="Sign Up" BackgroundColor="Transparent" 
+                       TranslationY="250"
+                       HorizontalOptions="Center" 
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="Large"
+                       TextColor="White"></Label>
+
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -15,6 +15,10 @@ namespace WeCycle.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
+            {
+                Window.AddFlags(WindowManagerFlags.TranslucentStatus);
+            }
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
