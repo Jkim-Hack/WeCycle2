@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeCycle.Challenges"
+             Title="ImageCell Demo"
+             Padding="10, 0">
+    <StackLayout>
+        <StackLayout.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="changePg"/>
+            <SwipeGestureRecognizer Direction="Right" Swiped="changePg"/>
+        </StackLayout.GestureRecognizers>
+        <Label Text="Challenges"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <TableView Intent="Form"
+                   Margin="10, 0"
+                   BackgroundColor="LightGray" VerticalOptions="Fill">
+            <TableRoot>
+                <TableSection>
+                    <ImageCell Text="Daily Challenge 1"
+                               TextColor="Teal"
+                               Detail="Scan 3 Items! Reward: 30 coins">
+                        <ImageCell.ImageSource>
+                            <OnPlatform x:TypeArguments="ImageSource">
+                                <On Platform="Android" Value="COINS.png" />
+                            </OnPlatform>
+                        </ImageCell.ImageSource>
+                    </ImageCell>
+                </TableSection>
+                <TableSection>
+                    <ImageCell Text="Daily Challenge 2"
+                               TextColor="Teal"
+                               Detail="Scan 5 Items! Reward: 50 coins">
+                        <ImageCell.ImageSource>
+                            <OnPlatform x:TypeArguments="ImageSource">
+                                <On Platform="Android" Value="COINS.png" />
+                            </OnPlatform>
+                        </ImageCell.ImageSource>
+                    </ImageCell>
+                </TableSection>
+                <TableSection>
+                    <ImageCell Text="Weekly Challenge 1"
+                               TextColor="Teal"
+                               Detail="Beat all your friends! Reward: 150 coins">
+                        <ImageCell.ImageSource>
+                            <OnPlatform x:TypeArguments="ImageSource">
+                                <On Platform="Android" Value="COINS.png" />
+                            </OnPlatform>
+                        </ImageCell.ImageSource>
+                    </ImageCell>
+                </TableSection>
+                <TableSection>
+                    <ImageCell Text="Goal 1"
+                               TextColor="Teal"
+                               Detail="Finish 3 Challenges! Reward: 75 coins">
+                        <ImageCell.ImageSource>
+                            <OnPlatform x:TypeArguments="ImageSource">
+                                <On Platform="Android" Value="COINS.png" />
+                            </OnPlatform>
+                        </ImageCell.ImageSource>
+                    </ImageCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Label Text="Raffle"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center" />
+        <Button x:Name="rafflebutton" Text="Solar Phone Charger
+                
+                Enter Raffle" ImageSource="solarcharger.png"/>
+    </StackLayout>
+</ContentPage>

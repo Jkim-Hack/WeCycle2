@@ -1,0 +1,102 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WeCycle.Friends">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="changePg"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="changePg"/>
+            </StackLayout.GestureRecognizers>
+            <Label Text="Friends"
+                   Padding="30"
+                   FontSize="40"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+            <CollectionView x:Name="collectionList" Margin="5" ItemsLayout="HorizontalList"
+                            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="5" Margin="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="2"    
+                                Text="{Binding FriendName}"    
+                                FontAttributes="Bold" />
+                            <Image Grid.Row="1"
+                                Source="TealCircle.png"    
+                                HeightRequest="50"    
+                                WidthRequest="50" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                      Padding="20" TranslationY="-40">
+                <Image Source="ElevatedCard.png" HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="CenterAndExpand" ScaleX="2.8" ScaleY="1.5"></Image>
+                <Image Source="TealCircle.png"
+                       HeightRequest="70"
+                       WidthRequest="70"
+                       Margin="0,-70,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"></Image>
+                <Label Text="John is up 30 coins from you! " FontSize="Subtitle"
+                       Margin="0,50,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="3m 28s" FontSize="Medium" HorizontalTextAlignment="End" VerticalTextAlignment="Center"></Label>
+
+            </Grid>
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                      Padding="20" TranslationY="-30">
+                <Image Source="ElevatedCard.png" HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="CenterAndExpand" ScaleX="2.8" ScaleY="1.5"></Image>
+                <Image Source="TealCircle.png"
+                       HeightRequest="70"
+                       WidthRequest="70"
+                       Margin="0,-70,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"></Image>
+                <Label Text="Amy just surpassed your score!" FontSize="Subtitle"
+                       Margin="0,50,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="5m 0s" FontSize="Medium" HorizontalTextAlignment="End" VerticalTextAlignment="Center"></Label>
+
+            </Grid>
+
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                      Padding="20" TranslationY="-20">
+                <Image Source="ElevatedCard.png" HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="CenterAndExpand" ScaleX="2.8" ScaleY="1.5"></Image>
+                <Image Source="TealCircle.png"
+                       HeightRequest="70"
+                       WidthRequest="70"
+                       Margin="0,-70,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"></Image>
+                <Label Text="Jane has recycled more than you!" FontSize="Subtitle"
+                       Margin="0,50,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="5m 0s" FontSize="Medium" HorizontalTextAlignment="End" VerticalTextAlignment="Center"></Label>
+                
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

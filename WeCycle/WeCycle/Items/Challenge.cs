@@ -8,7 +8,6 @@ namespace WeCycle.Items
     {
         public string Name { get; set; }
         public string Desc { get; set; }
-        public int Coins { get; set; }
         public string ImageUrl { get; set; }
     }
 }

@@ -4634,17 +4634,18 @@ public final class R {
     public static final int settings=0x7f0700bd;
     public static final int settingsbig=0x7f0700be;
     public static final int settingsmed=0x7f0700bf;
-    public static final int tealcircle=0x7f0700c0;
-    public static final int tealcirclebig=0x7f0700c1;
-    public static final int tealcirclemed=0x7f0700c2;
-    public static final int tooltip_frame_dark=0x7f0700c3;
-    public static final int tooltip_frame_light=0x7f0700c4;
-    public static final int toprect=0x7f0700c5;
-    public static final int toprectbig=0x7f0700c6;
-    public static final int toprectmed=0x7f0700c7;
-    public static final int wecycle=0x7f0700c8;
-    public static final int wecyclebig=0x7f0700c9;
-    public static final int wecyclemed=0x7f0700ca;
+    public static final int solarcharger=0x7f0700c0;
+    public static final int tealcircle=0x7f0700c1;
+    public static final int tealcirclebig=0x7f0700c2;
+    public static final int tealcirclemed=0x7f0700c3;
+    public static final int tooltip_frame_dark=0x7f0700c4;
+    public static final int tooltip_frame_light=0x7f0700c5;
+    public static final int toprect=0x7f0700c6;
+    public static final int toprectbig=0x7f0700c7;
+    public static final int toprectmed=0x7f0700c8;
+    public static final int wecycle=0x7f0700c9;
+    public static final int wecyclebig=0x7f0700ca;
+    public static final int wecyclemed=0x7f0700cb;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

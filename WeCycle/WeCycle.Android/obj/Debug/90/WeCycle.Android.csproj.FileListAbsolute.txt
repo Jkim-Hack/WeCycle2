@@ -598,3 +598,4 @@ C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.Android\obj\Debug\90\res\dra
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.Android\obj\Debug\90\res\drawable\wecyclemed.png
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.Android\obj\Debug\90\android\assets\System.Data.SqlClient.dll
 C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
+C:\Users\johnk\source\repos\WeCycle\WeCycle\WeCycle.Android\obj\Debug\90\res\drawable\solarcharger.png

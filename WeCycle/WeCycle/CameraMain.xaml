@@ -9,6 +9,10 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="changePg"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="changePg"/>
+            </StackLayout.GestureRecognizers>
             <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <Image Source="TopRect.png" VerticalOptions="Start" HorizontalOptions="FillAndExpand"
                        Scale="1.2">
@@ -23,7 +27,8 @@
                    FontSize="Title">
                 </Label>
                 <Grid HorizontalOptions="Center" VerticalOptions="Center">
-                    <ImageButton x:Name="Start_Cam" Source="TealCircle.png" Padding="-35"
+                    <ImageButton x:Name="Start_Cam" Source="TealCircle.png"  
+                                 BackgroundColor="Transparent"
                     Clicked="CaptureSend" Scale=".6" Margin="0,-200,0,0">
                     </ImageButton>
                     

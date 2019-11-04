@@ -70,6 +70,7 @@ namespace WeCycle
                     using (SqlCommand command = new SqlCommand(instruction.ToString(), connection))
                     {
                         command.ExecuteNonQuery();
+                        Console.WriteLine("REEEEEEE");
                     }
                 }
             }
@@ -92,6 +93,33 @@ namespace WeCycle
                     using (SqlCommand command = new SqlCommand(instruction.ToString(), connection))
                     {
                         command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+
+        public static void updateCoins(User user, int coinIncrement, SqlConnectionStringBuilder connectionInfo)
+        {
+            try
+            {
+                using (SqlConnection connection = getNewConnection(connectionInfo))
+                {
+                    connection.Open();
+                    StringBuilder instruction = new StringBuilder();
+
+                    int newCoinCount = user.User_CoinCount + coinIncrement;
+
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+
+                    instruction.Append("UPDATE users SET user_coincoint = " + "'" + newCoinCount + "'" + "WHERE user_name = " + "'" + user.User_Name + "'"  +  ")" );
+                    using (SqlCommand command = new SqlCommand(instruction.ToString(), connection))
+                    {
+                        adapter.InsertCommand = command;
+                        adapter.InsertCommand.ExecuteNonQuery();
                     }
                 }
             }

@@ -18,12 +18,29 @@ namespace WeCycle
     {
         public CameraMain()
         {
-
             InitializeComponent();
             var welcomeLabel = this.FindByName<Label>("Welcome");
             welcomeLabel.Text = "Welcome " + App.user.User_Name;
             var coinsLabel = this.FindByName<Label>("coins");
             coinsLabel.Text = "" + App.user.User_CoinCount;
+          
+
+        }
+
+        void changePg(object sender, SwipedEventArgs e)
+        {
+            switch (e.Direction)
+            {
+                case SwipeDirection.Left:
+                    // not supposed to do anything
+                    Navigation.PushAsync(new Challenges());
+                    break;
+                case SwipeDirection.Right:
+                    // go back to main page
+                    Navigation.PushAsync(new Friends());
+                    break;
+
+            }
         }
 
         async void CaptureSend(object sender, EventArgs e)
@@ -32,6 +49,7 @@ namespace WeCycle
             if(photo != null)
             {
                 await Task.Run(() => CaptureAndSendScreen(photo));
+
             }
         }
 
@@ -53,8 +71,9 @@ namespace WeCycle
                 if(model.Probability > .9)
                 {
                     Console.WriteLine("RECYCLABLE!");
-                    App.user = new User(App.user.User_Name, App.user.User_Password, App.user.User_Email, App.user.User_PhoneNumber, App.user.User_CoinCount+2, App.user.User_Num_ChallengeCompleted);
-                    SQLManager.insertSingleUser(App.user, App.connectionInfo);
+                    //App.user = new User(App.user.User_Name, App.user.User_Password, App.user.User_Email, App.user.User_PhoneNumber, App.user.User_CoinCount+2, App.user.User_Num_ChallengeCompleted);
+                    Console.WriteLine(App.user);
+                    SQLManager.updateCoins(App.user,2, App.connectionInfo);
                 } else
                 {
                     Console.WriteLine("NOT RECYCLABLE!");

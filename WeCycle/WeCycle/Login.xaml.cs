@@ -47,7 +47,6 @@ namespace WeCycle
 
         void SignIn_Clicked(object sender, EventArgs args)
         {
-            Console.WriteLine("If you see this you are gay");
             String userName = UsernameEntry.Text;
             String password = PasswordEntry.Text;
 
@@ -65,14 +64,15 @@ namespace WeCycle
 
         void SignUp_Clicked(object sender, EventArgs args)
         {
-            Console.WriteLine("If you see this you are gay");
-            String userName = UsernameEntry.Text;
-            String password = PasswordEntry.Text;
+   
+            var userName = UsernameEntry.Text;
+            var password = PasswordEntry.Text;
 
 
             App.user = new User(userName, password, "000-000-0000", 0, 0, 0);
 
             SQLManager.insertSingleUser(App.user, App.connectionInfo);
+
 
             if (App.user != null)
                 Navigation.PushAsync(new CameraMain());

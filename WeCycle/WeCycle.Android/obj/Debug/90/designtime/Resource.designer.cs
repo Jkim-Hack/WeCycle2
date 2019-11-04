@@ -6015,6 +6015,9 @@ namespace WeCycle.Droid
 			// aapt resource value: 0x7F07004A
 			public const int SettingsMed = 2131165258;
 			
+			// aapt resource value: 0x7F0700C3
+			public const int solarcharger = 2131165379;
+			
 			// aapt resource value: 0x7F07004B
 			public const int TealCircle = 2131165259;
 			
@@ -6024,11 +6027,11 @@ namespace WeCycle.Droid
 			// aapt resource value: 0x7F07004D
 			public const int TealCircleMed = 2131165261;
 			
-			// aapt resource value: 0x7F0700C3
-			public const int tooltip_frame_dark = 2131165379;
-			
 			// aapt resource value: 0x7F0700C4
-			public const int tooltip_frame_light = 2131165380;
+			public const int tooltip_frame_dark = 2131165380;
+			
+			// aapt resource value: 0x7F0700C5
+			public const int tooltip_frame_light = 2131165381;
 			
 			// aapt resource value: 0x7F07004E
 			public const int TopRect = 2131165262;
